@@ -1,12 +1,17 @@
-function SearchBar() {
-    return (
-      <div>
-        <input
-          type="text"
-          placeholder="Search products..."
-        />
-      </div>
-    );
-  }
-  
-  export default SearchBar;
+import '../../styles/common/SearchBar.css'
+
+function SearchBar({ value, onChange }) {
+  return (
+    <div className="search-bar">
+      <input
+        type="search"
+        className="search-bar__input"
+        placeholder="Search products..."
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+      />
+    </div>
+  )
+}
+
+export default SearchBar
