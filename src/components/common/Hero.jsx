@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import '../../styles/common/Hero.css'
 
 function Hero() {
@@ -11,7 +12,7 @@ function Hero() {
             products.
           </p>
   
-          <button>Shop Now</button>
+          <Link to="/products" className="hero__cta">Shop Now</Link>
         </div>
   
         <div className="hero-image">

@@ -15,6 +15,20 @@
   color: var(--color-text-muted);
 }
 
+.navbar__link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.navbar__link:hover {
+  color: var(--color-text);
+}
+
+.navbar__link.active {
+  color: var(--color-accent);
+}
+
 @media (max-width: 600px) {
   .navbar {
     padding: 0.75rem 1rem;

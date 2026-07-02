@@ -1,22 +1,18 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
 import Header from "../components/common/Header"
 import Navbar from "../components/common/Navbar"
-import Hero from "../components/common/Hero"
 import SearchBar from "../components/common/SearchBar"
 import ProductList from "../components/product/ProductList"
 import Footer from "../components/common/Footer"
 import products from "../data/products"
-import "../styles/pages/Home.css"
+import "../styles/pages/Products.css"
 
-function Home() {
+function Products() {
   const [search, setSearch] = useState("")
 
-  const filteredProducts = products
-    .filter((product) =>
-      product.title.toLowerCase().includes(search.trim().toLowerCase())
-    )
-    .slice(0, 6)
+  const filteredProducts = products.filter((product) =>
+    product.title.toLowerCase().includes(search.trim().toLowerCase())
+  )
 
   return (
     <>
@@ -24,16 +20,14 @@ function Home() {
       <Navbar />
 
       <main>
-        <Hero />
+        <section className="products-page">
+          <h1 className="products-page__title">All Products</h1>
+          <p className="products-page__subtitle">
+            Browse our full collection of {products.length} products
+          </p>
+        </section>
         <SearchBar value={search} onChange={setSearch} />
         <ProductList products={filteredProducts} />
-        {products.length > 6 && (
-          <div className="home__view-all">
-            <Link to="/products" className="home__view-all-link">
-              View all products
-            </Link>
-          </div>
-        )}
       </main>
 
       <Footer />
@@ -41,4 +35,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Products

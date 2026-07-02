@@ -37,24 +37,24 @@
   line-height: 1.6;
 }
 
-.hero-content button {
+.hero__cta {
+  display: inline-block;
   padding: 0.75rem 1.75rem;
   background-color: var(--color-accent);
   color: #ffffff;
   font-weight: 600;
   font-size: 0.9375rem;
-  border: none;
+  text-decoration: none;
   border-radius: var(--radius-sm);
-  cursor: pointer;
   transition: background-color var(--transition), transform var(--transition);
 }
 
-.hero-content button:hover {
+.hero__cta:hover {
   background-color: var(--color-accent-hover);
   transform: translateY(-1px);
 }
 
-.hero-content button:focus-visible {
+.hero__cta:focus-visible {
   outline: 2px solid #ffffff;
   outline-offset: 2px;
 }

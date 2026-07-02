@@ -1,0 +1,22 @@
+.home__view-all {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem 2rem;
+  text-align: center;
+}
+
+.home__view-all-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: var(--color-accent);
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.home__view-all-link:hover {
+  background-color: var(--color-accent);
+  color: #fff;
+}
