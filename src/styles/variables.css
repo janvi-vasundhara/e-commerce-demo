@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #1a1a2e;
+  --color-primary-dark: #16213e;
+  --color-accent: #e94560;
+  --color-accent-hover: #d63851;
+  --color-text: #1a1a2e;
+  --color-text-muted: #6b7280;
+  --color-text-light: #a0a0b8;
+  --color-bg: #f8f9fc;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+
+  --font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --max-width: 1200px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: 0.2s ease;
+}

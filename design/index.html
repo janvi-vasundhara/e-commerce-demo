@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ShopEase - Your one-stop e-commerce store. Browse products, deals, and more." />
+  <title>ShopEase | Home</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- Sticky Header -->
+    <header class="header">
+      <div class="header__inner">
+
+        <a href="#" class="header__logo" aria-label="ShopEase Home">
+          <span class="header__logo-icon" aria-hidden="true">S</span>
+          ShopEase
+        </a>
+
+        <form class="search" role="search" aria-label="Site search">
+          <label for="search-input" class="sr-only">Search products</label>
+          <input
+            type="search"
+            id="search-input"
+            class="search__input"
+            placeholder="Search for products, brands and more..."
+            autocomplete="off"
+          />
+          <button type="submit" class="search__btn" aria-label="Search">Search</button>
+        </form>
+
+        <div class="header__actions">
+          <a href="#" class="header__action">
+            <span class="header__action-icon" aria-hidden="true">&#128100;</span>
+            Account
+          </a>
+          <a href="#" class="header__action">
+            <span class="header__action-icon" aria-hidden="true">&#9825;</span>
+            Wishlist
+          </a>
+          <a href="#" class="header__action header__cart-badge">
+            <span class="header__action-icon" aria-hidden="true">&#128722;</span>
+            Cart
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Navigation Bar + Category Menu -->
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="navbar__inner">
+
+        <button class="navbar__categories-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          <span aria-hidden="true">&#9776;</span>
+          All Categories
+        </button>
+
+        <ul class="navbar__menu">
+          <li><a href="#" class="navbar__link navbar__link--active">Home</a></li>
+          <li><a href="#" class="navbar__link">Electronics</a></li>
+          <li><a href="#" class="navbar__link">Fashion</a></li>
+          <li><a href="#" class="navbar__link">Home &amp; Living</a></li>
+          <li><a href="#" class="navbar__link">Sports</a></li>
+          <li><a href="#" class="navbar__link">Beauty</a></li>
+          <li><a href="#" class="navbar__link">Deals</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <main class="page__main">
+
+      <!-- Hero Banner -->
+      <section class="hero" aria-label="Featured promotion">
+        <div class="hero__banner">
+          <div class="hero__content">
+            <span class="hero__badge">Summer Sale</span>
+            <h1 class="hero__title">Up to 50% Off<br />On Top Brands</h1>
+            <p class="hero__subtitle">
+              Discover the latest trends in fashion, electronics, and lifestyle.
+              Free shipping on orders over $50.
+            </p>
+            <a href="#products" class="hero__cta">Shop Now &rarr;</a>
+          </div>
+          <div class="hero__image-wrap">
+            <img
+              class="hero__image"
+              src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Shopping bags and products on display"
+              width="640"
+              height="400"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Grid -->
+      <section class="products" id="products" aria-labelledby="products-heading">
+        <div class="container">
+          <div class="products__header">
+            <h2 class="products__title" id="products-heading">Featured Products</h2>
+            <a href="#" class="products__view-all">View All &rarr;</a>
+          </div>
+
+          <ul class="product-grid">
+
+            <!-- Product Card 1 -->
+            <li class="product-card">
+              <div class="product-card__image-wrap">
+                <span class="product-card__discount">-25%</span>
+                <button class="product-card__wishlist" type="button" aria-label="Add to wishlist">&#9825;</button>
+                <img
+                  class="product-card__image"
+                  src="https://images.pexels.com/photos/36896395/pexels-photo-36896395.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Classic Cotton T-Shirt"
+                  width="300"
+                  height="225"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__name">Classic Cotton T-Shirt</h3>
+                <div class="product-card__rating" aria-label="Rating 4.5 out of 5 stars">
+                  <span class="product-card__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#189;</span>
+                  <span class="product-card__rating-count">(128)</span>
+                </div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$20.00</span>
+                  <span class="product-card__price--original">$26.99</span>
+                </div>
+                <button class="product-card__add-btn" type="button">
+                  <span aria-hidden="true">&#128722;</span> Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <!-- Product Card 2 -->
+            <li class="product-card">
+              <div class="product-card__image-wrap">
+                <span class="product-card__discount">-15%</span>
+                <button class="product-card__wishlist" type="button" aria-label="Add to wishlist">&#9825;</button>
+                <img
+                  class="product-card__image"
+                  src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Running Shoes Pro"
+                  width="300"
+                  height="225"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__name">Running Shoes Pro</h3>
+                <div class="product-card__rating" aria-label="Rating 4 out of 5 stars">
+                  <span class="product-card__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                  <span class="product-card__rating-count">(256)</span>
+                </div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$50.00</span>
+                  <span class="product-card__price--original">$58.99</span>
+                </div>
+                <button class="product-card__add-btn" type="button">
+                  <span aria-hidden="true">&#128722;</span> Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <!-- Product Card 3 -->
+            <li class="product-card">
+              <div class="product-card__image-wrap">
+                <span class="product-card__discount">-30%</span>
+                <button class="product-card__wishlist" type="button" aria-label="Add to wishlist">&#9825;</button>
+                <img
+                  class="product-card__image"
+                  src="https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Luxury Smart Watch"
+                  width="300"
+                  height="225"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__name">Luxury Smart Watch</h3>
+                <div class="product-card__rating" aria-label="Rating 5 out of 5 stars">
+                  <span class="product-card__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="product-card__rating-count">(89)</span>
+                </div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$120.00</span>
+                  <span class="product-card__price--original">$171.99</span>
+                </div>
+                <button class="product-card__add-btn" type="button">
+                  <span aria-hidden="true">&#128722;</span> Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <!-- Product Card 4 -->
+            <li class="product-card">
+              <div class="product-card__image-wrap">
+                <span class="product-card__discount">-20%</span>
+                <button class="product-card__wishlist" type="button" aria-label="Add to wishlist">&#9825;</button>
+                <img
+                  class="product-card__image"
+                  src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Wireless Headphones"
+                  width="300"
+                  height="225"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__name">Wireless Headphones</h3>
+                <div class="product-card__rating" aria-label="Rating 4.5 out of 5 stars">
+                  <span class="product-card__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#189;</span>
+                  <span class="product-card__rating-count">(342)</span>
+                </div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$79.99</span>
+                  <span class="product-card__price--original">$99.99</span>
+                </div>
+                <button class="product-card__add-btn" type="button">
+                  <span aria-hidden="true">&#128722;</span> Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <!-- Product Card 5 -->
+            <li class="product-card">
+              <div class="product-card__image-wrap">
+                <span class="product-card__discount">-10%</span>
+                <button class="product-card__wishlist" type="button" aria-label="Add to wishlist">&#9825;</button>
+                <img
+                  class="product-card__image"
+                  src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Leather Backpack"
+                  width="300"
+                  height="225"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__name">Leather Backpack</h3>
+                <div class="product-card__rating" aria-label="Rating 4 out of 5 stars">
+                  <span class="product-card__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                  <span class="product-card__rating-count">(67)</span>
+                </div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$45.00</span>
+                  <span class="product-card__price--original">$49.99</span>
+                </div>
+                <button class="product-card__add-btn" type="button">
+                  <span aria-hidden="true">&#128722;</span> Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <!-- Product Card 6 -->
+            <li class="product-card">
+              <div class="product-card__image-wrap">
+                <span class="product-card__discount">-40%</span>
+                <button class="product-card__wishlist" type="button" aria-label="Add to wishlist">&#9825;</button>
+                <img
+                  class="product-card__image"
+                  src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Designer Sunglasses"
+                  width="300"
+                  height="225"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__name">Designer Sunglasses</h3>
+                <div class="product-card__rating" aria-label="Rating 4.5 out of 5 stars">
+                  <span class="product-card__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#189;</span>
+                  <span class="product-card__rating-count">(201)</span>
+                </div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$35.00</span>
+                  <span class="product-card__price--original">$58.99</span>
+                </div>
+                <button class="product-card__add-btn" type="button">
+                  <span aria-hidden="true">&#128722;</span> Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <!-- Product Card 7 -->
+            <li class="product-card">
+              <div class="product-card__image-wrap">
+                <span class="product-card__discount">-18%</span>
+                <button class="product-card__wishlist" type="button" aria-label="Add to wishlist">&#9825;</button>
+                <img
+                  class="product-card__image"
+                  src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Skincare Gift Set"
+                  width="300"
+                  height="225"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__name">Skincare Gift Set</h3>
+                <div class="product-card__rating" aria-label="Rating 5 out of 5 stars">
+                  <span class="product-card__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="product-card__rating-count">(54)</span>
+                </div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$29.99</span>
+                  <span class="product-card__price--original">$36.99</span>
+                </div>
+                <button class="product-card__add-btn" type="button">
+                  <span aria-hidden="true">&#128722;</span> Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <!-- Product Card 8 -->
+            <li class="product-card">
+              <div class="product-card__image-wrap">
+                <span class="product-card__discount">-22%</span>
+                <button class="product-card__wishlist" type="button" aria-label="Add to wishlist">&#9825;</button>
+                <img
+                  class="product-card__image"
+                  src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Gaming Laptop"
+                  width="300"
+                  height="225"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__name">Gaming Laptop</h3>
+                <div class="product-card__rating" aria-label="Rating 4 out of 5 stars">
+                  <span class="product-card__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                  <span class="product-card__rating-count">(178)</span>
+                </div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$899.00</span>
+                  <span class="product-card__price--original">$1,149.00</span>
+                </div>
+                <button class="product-card__add-btn" type="button">
+                  <span aria-hidden="true">&#128722;</span> Add to Cart
+                </button>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__brand-name">ShopEase</p>
+          <p class="footer__brand-desc">
+            Your trusted online marketplace for quality products at great prices.
+            Shop with confidence and enjoy fast delivery.
+          </p>
+        </div>
+        <div>
+          <p class="footer__heading">Shop</p>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">All Products</a></li>
+            <li><a href="#" class="footer__link">New Arrivals</a></li>
+            <li><a href="#" class="footer__link">Best Sellers</a></li>
+            <li><a href="#" class="footer__link">Deals &amp; Offers</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Support</p>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Help Center</a></li>
+            <li><a href="#" class="footer__link">Track Order</a></li>
+            <li><a href="#" class="footer__link">Returns</a></li>
+            <li><a href="#" class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Company</p>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-inner">
+          <p>&copy; 2026 ShopEase. All rights reserved.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">&#120143;</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">&#9679;</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
